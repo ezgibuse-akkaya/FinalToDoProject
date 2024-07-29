@@ -1,4 +1,4 @@
-package com.ezgibuseisik.todolistproject.model;
+package com.example.todoapp.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -7,10 +7,12 @@ import javax.persistence.Id;
 
 @Entity
 public class ToDo {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String task;
+
+    private String title;
     private boolean completed;
 
     // Getters and setters
@@ -22,12 +24,12 @@ public class ToDo {
         this.id = id;
     }
 
-    public String getTask() {
-        return task;
+    public String getTitle() {
+        return title;
     }
 
-    public void setTask(String task) {
-        this.task = task;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public boolean isCompleted() {
