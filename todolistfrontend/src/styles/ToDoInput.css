@@ -1,0 +1,14 @@
+.todo-input {
+    margin: 20px;
+}
+
+.todo-input input {
+    padding: 10px;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.todo-input button {
+    padding: 10px;
+    font-size: 1rem;
+}

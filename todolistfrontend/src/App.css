@@ -1,74 +1,79 @@
 .App {
   text-align: center;
-  font-family: Arial, sans-serif;
-  margin-top: 20px;
 }
 
-form {
-  margin-bottom: 20px;
+.app-title {
+  font-size: 2.5rem;
+  margin: 20px 0;
 }
 
-input {
-  padding: 10px;
-  font-size: 16px;
-  margin-right: 10px;
-  width: 300px;
+.section-title {
+  font-size: 1.5rem;
+  margin: 20px 0;
 }
 
-button {
-  padding: 10px 15px;
-  font-size: 16px;
-  margin: 5px;
-  border: none;
-  background-color: #28a745;
-  color: white;
-  cursor: pointer;
+.section-title {
+  font-family: "Brush Script MT", cursive; /* Yazı tipi */
+  font-size: 2rem; /* Büyük yazı boyutu */
+  font-style: italic; /* İtalik stil */
+  font-weight: bold; /* Kalın yazı stili */
+  color: #333; /* Koyu gri renk */
+  text-align: center; /* Ortalanmış yazı */
+  margin-bottom: 20px; /* Başlığın altına boşluk ekler */
+  letter-spacing: 1px; /* Harfler arasına biraz boşluk ekler */
+  line-height: 1.4; /* Satır yüksekliğini ayarlar */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Gölge efekti */
 }
-
-button:hover {
-  background-color: #218838;
-}
-
-.todo-item {
+body {
+  font-family: 'Roboto', sans-serif; /* Genel font ayarı */
+  margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  background: #f8f9fa;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
+  height: 100vh;
+  background-color: #f0f0f0; /* Arka plan rengi */
 }
 
-.todo-item.completed span {
-  text-decoration: line-through;
-  color: #d3d3d3;
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #87CEFA; /* Açık mavi renk */
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+  z-index: 1000; /* Diğer içeriklerin üstünde görünmesi için */
 }
 
-.todo-item span {
-  flex: 1;
+.navbar h1 {
+  margin: 0;
+  font-size: 2rem; /* Başlık boyutu */
+  font-weight: bold; /* Kalın yazı stili */
+  text-transform: uppercase; /* Büyük harf kullanımı */
+  color: #fff; /* Beyaz renk */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Gölge efekti */
 }
 
-.todo-item button {
-  background-color: #dc3545;
-  margin-left: 10px;
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Sayfanın tam yüksekliği */
+  margin-top: 60px; /* Navbar'ın yüksekliği kadar boşluk */
 }
 
-.todo-item button.edit {
-  background-color: #ffc107;
+.app-title {
+  display: flex;
+  font-size: 4rem; /* Başlık boyutu */
+  font-weight: bold; /* Kalın yazı stili */
+  text-transform: uppercase; /* Büyük harf kullanımı */
 }
 
-.todo-item button.complete {
-  background-color: #28a745;
+.app-title span {
+  display: inline-block;
+  margin: 0 4px; /* Harfler arasında boşluk */
 }
 
-.todo-item button:hover {
-  background-color: #c82333;
-}
 
-.todo-item button.edit:hover {
-  background-color: #e0a800;
-}
-
-.todo-item button.complete:hover {
-  background-color: #218838;
-}
